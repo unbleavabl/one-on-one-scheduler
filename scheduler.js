@@ -47,4 +47,4 @@ let createSchedule = (people, slots) => {
     return output;
 }
 
-createSchedule(peopleArray, slotsArray);
+console.log(createSchedule(peopleArray, slotsArray));
