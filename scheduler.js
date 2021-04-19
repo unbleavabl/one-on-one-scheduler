@@ -1,5 +1,5 @@
 let peopleArray = ['amar', 'viraj', 'mansi', 'sayima', 'antony', 'dale', 'aj', 'indu'];
-let slotsArray = ['3:00', '3:10', '3:20', '3:30', '3:40', '3:50', '4:00'];
+let slotsArray = ['3:00', '3:10', '3:20', '3:30', '3:40', '3:50', '4:00']; // length = peopleArray.length -1
 
 let unusedSlot = (person1, person2, usedSlot) => (slot) =>  {
     const person1SlotFree = !usedSlot[person1] || (usedSlot[person1].indexOf(slot) < 0);
