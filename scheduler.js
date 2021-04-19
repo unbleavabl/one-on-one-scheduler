@@ -33,7 +33,7 @@ let createSchedule = (people, slots) => {
                     ...output,
                     [availableSlot]: [
                         ...(output[availableSlot] || []), 
-                        [person1, person2],
+                        `${person1}, ${person2}`,
                     ],
                 }
             }
@@ -47,4 +47,5 @@ let createSchedule = (people, slots) => {
     return output;
 }
 
-console.log(createSchedule(peopleArray, slotsArray));
+let result = createSchedule(peopleArray, slotsArray);
+console.table(result);
